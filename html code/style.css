@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    background: url('./images/Logo\ For\ EngiConnect.png') center/cover no-repeat;
+    background-color: #008080;
+    padding: 30px 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav {
+     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    /* background-color: white; */
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bolder;
+}
+
+/* Search bar styles */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    flex: 0 0 auto;
+}
+
+.search-bar input {
+    border: none;
+    padding: 10px 20px;
+    outline: none;
+}
+
+.search-bar button {
+    /* background-color: #00a6a6; */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+}
+
+.search-bar button:hover {
+    background-color: beige;
+}
+
+
+/* Sections */
+section {
+    text-align: center;
+    /* padding: 10px 10px; */
+    font-size: 1.2rem;
+}
+.video-container {
+    margin-top: 80px; /* offset to account for fixed header */
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+/* Container Section */
+.explore-section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+/* Title */
+.explore-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Card Grid */
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Card Styles */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Button Styles */
+.card-btn {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* Card Hover Effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+    
+
+
+@media (max-width: 600px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
