@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EngiConnect</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
 </head>
 <body>
        <header>
@@ -13,17 +14,15 @@
         <div class="nav-left">
             <a href="./index.html">Home</a>
             <a href="./pages/about.html">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Ideas</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Services</a>
         </div>
         <div class="search-bar">
             <input type="text" placeholder="Search...">
             <button type="submit"><img src="./images/icons8-search.gif" alt="" width="10px" height="10px"></button>
         </div>
         <div class="nav-right">
-            <a href="#">
-                <img src="./images/icons8-cart-48.png" alt="" width="30px" height="30px">
-            </a>
+            
             <a href="./pages/signin.html"><img src="./images/icons8-customer-96.png" alt="" width="25px" height="25px"> Sign In</a>
         </div>
     </nav>
@@ -33,6 +32,28 @@
 <main>
     <section class="video-container">
         <video src="./videos/4457865-uhd_3840_2160_24fps.mp4" autoplay muted loop></video>
+
+        <div class="signup-container">
+    <h2>Sign Up</h2>
+    <form action="#">
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Enter your full name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required />
+      </div>
+      <button type="submit" class="signup-btn">Sign Up</button>
+    </form>
+    <div class="bottom-link">
+      Already have an account? <a href="./pages/signin.html">Sign In</a>
+    </div>
+  </div>
     </section>
     <!-- Additional page content here -->
 </main>
@@ -46,7 +67,7 @@
     </div>
     <div class="card">
       <img src="./images/consult.jpg" alt="Shop Products">
-      <button class="card-btn">Shop Products</button>
+      <button class="card-btn">Consult</button>
     </div>
     <div class="card">
       <img src="./images/Find professional.jpg" alt="Find Professionals">
@@ -58,8 +79,51 @@
     </div>
   </div>
 </section>
+ 
+  
+     <section class="professionals-section">
+    <div class="section-header">
+      <h2>Browse Professionals Near You</h2>
+      <a href="#" class="see-all">See All</a>
+    </div>
 
+    <div class="slider-wrapper">
+      <button class="slide-btn left">&#8249;</button>
 
+      <div class="card-slider" id="card-slider">
+        <div class="pro-card">
+          <img src="images/arcjitect.jpg" alt="">
+          <p>Architects & Building Designers</p>
+        </div>
+        <div class="pro-card">
+          <img src="./images/design build firn.jpg" alt="">
+          <p>Design-Build Firms</p>
+        </div>
+        <div class="pro-card">
+          <img src="./images/gencontractors.jpg" alt="">
+          <p>General Contractors</p>
+        </div>
+        <div class="pro-card">
+          <img src="./images/home builder.jpg" alt="">
+          <p>Home Builders</p>
+        </div>
+        <div class="pro-card">
+          <img src="./images/interior design.jpg" alt="">
+          <p>Interior Designers & Decorators</p>
+        </div>
+        <div class="pro-card">
+          <img src="./images/Kitchen.jpg" alt="">
+          <p>Kitchen & Bathroom Designers</p>
+        </div>
+         <div class="pro-card">
+          <img src="./images/Stones.jpg" alt="">
+          <p>Stones, Pavers & Concrete</p>
+        </div>
+      </div>
+
+       <button class="scroll-btn right" onclick="scrollCards(1)">&#10095;</button>
+    </div>
+  </section>
    
 </body>
 </html>
