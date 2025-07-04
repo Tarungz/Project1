@@ -9,3 +9,8 @@ btnLeft.addEventListener("click", () => {
 btnRight.addEventListener("click", () => {
   slider.scrollLeft += 250;
 });
+
+
+
+
+

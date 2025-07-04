@@ -3,11 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <title>Sign Up</title>
-<link rel="stylesheet" href="./pages.css">
-</head>
-<body>
+  <link rel="stylesheet" href="../style.css">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
 
-  <div class="signup-container">
+    
+ 
+</head>
+<body class="body-signin">
+    <header>
+    <div class="logo"></div>
+    <nav>
+        <div class="nav-left">
+            <a href="../index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact Us</a>
+            <a href="./services.html">Services</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><img src="../images/icons8-search.gif" alt="" width="10px" height="10px"></button>
+        </div>
+        <div class="nav-right">
+            
+            <a href="./signin.html"><img src="../images/icons8-customer-96.png" alt="" width="25px" height="25px"> Sign In</a>
+        </div>
+    </nav>
+
+    </header>
+
+   <div class="signup-containers">
     <h2>Sign Up</h2>
     <form action="#">
       <div class="form-group">
@@ -15,7 +41,7 @@
         <input type="text" id="fullname" placeholder="Enter your full name" required />
       </div>
       <div class="form-group">
-        <label for="email">Email address</label>
+        <label for="email">Email Address</label>
         <input type="email" id="email" placeholder="Enter your email" required />
       </div>
       <div class="form-group">

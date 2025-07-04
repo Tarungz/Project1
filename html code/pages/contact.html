@@ -3,38 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact Us</title>
-<link rel="stylesheet" href="./pages.css">
+<link rel="stylesheet" href="../style.css">
 </head>
 <body>
-       <nav class="navbar">
-    <div class="logo">
-  <img src="logo.jpg" alt="MyLogo"  />
-</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="service.html">Services</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="search-sign">
-      <div class="search-bar">
-        <input type="text" placeholder="Search...">
-        <button>Search</button>
-      </div>
-      <button>Sign Up</button>
-      <button>Sign In</button>
-    </div>
-  </nav>
+      <header>
+    <div class="logo"></div>
+    <nav>
+        <div class="nav-left">
+            <a href="../index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact Us</a>
+            <a href="./services.html">Services</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><img src="../images/icons8-search.gif" alt="" width="10px" height="10px"></button>
+        </div>
+        <div class="nav-right">
+            
+            <a href="./signin.html"><img src="../images/icons8-customer-96.png" alt="" width="25px" height="25px"> Sign In</a>
+        </div>
+    </nav>
 
-  <section class="contact-section">
-    <h2>Contact Us</h2>
-    <div class="contact-info">
+    </header>
+
+ <section class="contact-section">
+  <h2>Contact Us</h2>
+  <div class="contact-card">
+    <div class="contact-detail">
+      
       <p><strong>Email:</strong> contact@example.com</p>
+    </div>
+    <div class="contact-detail">
+     
       <p><strong>Phone:</strong> +977-9800000000</p>
+    </div>
+    <div class="contact-detail">
       <p><strong>Address:</strong> 123 Main Street, Kathmandu, Nepal</p>
+    </div>
+    <div class="contact-detail">
       <p><strong>Working Hours:</strong> Sunday – Friday, 9:00 AM – 6:00 PM</p>
     </div>
-  </section>
+  </div>
+</section>
+
 
 </body>
 </html>
